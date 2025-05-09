@@ -1,0 +1,72 @@
+.menu-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: scale(1.02);
+}
+
+.menu-item-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.menu-content {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.menu-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.add-to-cart-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+}
+
+.back-button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}

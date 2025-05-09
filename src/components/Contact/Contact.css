@@ -1,0 +1,109 @@
+/* Overall Page Styling */
+.contact-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Moves form to the right */
+    align-items: center;
+    background: url('/contactbg.jpg') no-repeat center center;
+    background-size: cover; /* Adjusted to cover the full screen */
+    color: white;
+    padding: 40px 10%;
+    min-height: 90vh;
+    text-align: left;
+}
+
+
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus,
+.contact-form textarea:-webkit-autofill {
+    background: rgba(30, 30, 50, 0.95) !important;
+    color: white !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(30, 30, 50, 0.95) inset !important;
+}
+
+
+/* Header */
+.contact-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgba(30, 30, 50, 0.95);
+    text-align: center;
+}
+
+/* Form Styling (Right Side) */
+.contact-form {
+    position: relative;
+    z-index: 2;
+    margin-top: 70px;
+    background: rgba(248, 248, 250, 0.95); /* Darker semi-transparent form */
+    padding: 25px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 480px;
+    color: white;
+    min-height: 70vh;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: rgba(30, 30, 50, 0.95); /* Orange with a darker shade */
+    color: white;
+    font-size: 16px;
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color:#67abe7;
+    outline: none;
+}
+
+/* Submit Button */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: rgba(30, 30, 50, 0.95);
+    color: rgb(251, 246, 246);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for more/less dimming */
+    z-index: 1;
+}
+
+.contact-form button:hover {
+    background: #2bb7ef;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-size: cover; /* Ensure full background on smaller screens */
+    }
+
+    .contact-form {
+        width: 90%;
+        max-width: 400px;
+    }
+}
